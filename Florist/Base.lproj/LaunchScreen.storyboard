@@ -1,19 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-CondensedExtraBold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-LM-729">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlZ-86-mWM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Florists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG4-bm-pH9">
+                                <rect key="frame" x="59" y="256.5" width="203" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="6iy-e1-s47"/>
+                                    <constraint firstAttribute="height" constant="55" id="9VM-wJ-FVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are the best florists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IND-Qm-gld">
+                                <rect key="frame" x="43" y="319" width="235" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="fIa-SD-PXP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u5n-LM-729" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3FF-GZ-h3O"/>
+                            <constraint firstItem="IND-Qm-gld" firstAttribute="top" secondItem="bG4-bm-pH9" secondAttribute="bottom" constant="8" id="Ioq-QM-7Cf"/>
+                            <constraint firstItem="bG4-bm-pH9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KTp-xg-PSv"/>
+                            <constraint firstItem="u5n-LM-729" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="LfG-3u-UVO"/>
+                            <constraint firstItem="HlZ-86-mWM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WxI-Eg-VKB"/>
+                            <constraint firstItem="u5n-LM-729" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a3P-kG-ehq"/>
+                            <constraint firstItem="u5n-LM-729" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIm-Mz-CLP"/>
+                            <constraint firstItem="HlZ-86-mWM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="emq-KH-BQq"/>
+                            <constraint firstItem="IND-Qm-gld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="ezK-l1-ToD"/>
+                            <constraint firstItem="HlZ-86-mWM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="iWD-LY-97f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IND-Qm-gld" secondAttribute="trailing" constant="42" id="jW2-Pr-2UO"/>
+                            <constraint firstItem="bG4-bm-pH9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="k7T-b1-qXS"/>
+                            <constraint firstItem="HlZ-86-mWM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lN6-gD-8np"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +81,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="770" height="512"/>
+    </resources>
 </document>
